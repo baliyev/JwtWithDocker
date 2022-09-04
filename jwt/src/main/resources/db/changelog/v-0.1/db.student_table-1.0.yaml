@@ -1,0 +1,24 @@
+databaseChangeLog:
+  - changeSet:
+      id: 12312389193
+      author: baliyev
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: student_id
+                  name: student_id
+                  type: bigint
+              - column:
+                  name: student_name
+                  type: VARCHAR(255)
+              - column:
+                  name: student_password
+                  type: VARCHAR(255)
+              - column:
+                  name: student_role
+                  type: VARCHAR(255)
+            tableName: abb_students
